@@ -1,3 +1,4 @@
+sudo apt-get install zsh vim tmux
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 cp gavin.zsh-theme ~/.oh-my-zsh/themes/
 ln -s ~/work/dotfiles/.[!.]* $HOME
