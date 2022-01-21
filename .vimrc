@@ -10,15 +10,12 @@ if has("multi_byte")
   set fileencodings=ucs-bom,utf-8,latin1
 endif
 
-au VimEnter * RainbowParenthesesToggle
-au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
-au Syntax * RainbowParenthesesLoadBraces
-
 let g:slime_target = "tmux"
 set background=dark
 let g:solarized_termcolors=256
-colorscheme wombat256 
+
+:colorscheme wombat256mod
+
 
 let g:neocomplcache_enable_at_startup = 1
 set t_Co=256
