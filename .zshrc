@@ -45,3 +45,11 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+# Java Configuration
+if [ -d "/usr/lib/jvm/default-java" ]; then
+    export JAVA_HOME="/usr/lib/jvm/default-java"
+elif [ -d "/usr/lib/jvm/java-11-openjdk-amd64" ]; then
+    export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
+elif [ -d "/usr/lib/jvm/java-8-openjdk-amd64" ]; then
+    export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
+fi
